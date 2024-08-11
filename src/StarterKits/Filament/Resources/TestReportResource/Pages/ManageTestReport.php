@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace XtendPackages\RESTPresenter\StarterKits\Filament\Resources\TestCoverageResource\Pages;
+namespace XtendPackages\RESTPresenter\StarterKits\Filament\Resources\TestReportResource\Pages;
 
 use Filament\Resources\Pages\ManageRecords;
-use XtendPackages\RESTPresenter\StarterKits\Filament\Resources\TestCoverageResource\Widgets\TestReportStatsWidget;
+use XtendPackages\RESTPresenter\StarterKits\Filament\Resources\TestReportResource\Widgets\TestReportStatsWidget;
 use XtendPackages\RESTPresenter\StarterKits\Filament\Resources\TestReportResource;
 
 class ManageTestReport extends ManageRecords
