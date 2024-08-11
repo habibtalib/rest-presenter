@@ -16,6 +16,7 @@ use XtendPackages\RESTPresenter\Factories\UserFactory;
  * @property string $password
  *
  * @mixin \Illuminate\Database\Eloquent\Builder<User>
+ * @use HasFactory<UserFactory>
  */
 class User extends Authenticatable
 {
@@ -44,6 +45,11 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+    /**
+     * The model factory for this model.
+     *
+     * @return UserFactory
+     */
     protected static function newFactory(): UserFactory
     {
         return UserFactory::new();
