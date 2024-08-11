@@ -24,11 +24,11 @@ class ManageEndpoints extends ManageRecords
                 Actions\Action::make('insomnia')
                     ->label('Insomnia')
                     ->icon('heroicon-o-arrow-down-tray')
-                    ->action(fn () => $this->downloadExportedCollection('insomnia')),
+                    ->action(fn (): \Symfony\Component\HttpFoundation\BinaryFileResponse => $this->downloadExportedCollection('insomnia')),
                 Actions\Action::make('postman')
                     ->label('Postman')
                     ->icon('heroicon-o-arrow-down-tray')
-                    ->action(fn () => $this->downloadExportedCollection('postman')),
+                    ->action(fn (): \Symfony\Component\HttpFoundation\BinaryFileResponse => $this->downloadExportedCollection('postman')),
             ])
                 ->label('Export Collection')
                 ->icon('heroicon-o-circle-stack')
