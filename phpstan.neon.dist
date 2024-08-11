@@ -12,3 +12,4 @@ parameters:
     checkMissingIterableValueType: true
     ignoreErrors:
         - '#Undefined variable: \$this#'
+        - '#^Class XtendPackages\\RESTPresenter\\Models\\User uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types: TFactory#'
